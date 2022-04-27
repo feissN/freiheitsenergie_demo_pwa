@@ -39,16 +39,16 @@ function updateEnergy(energy) {
 }
 
 document.querySelector(".smile").addEventListener("click", () => {
-    setTimeout(() => {
-        Notification.requestPermission().then((result) => {
-            if (result === 'granted') {
+    Notification.requestPermission().then((result) => {
+        if (result === 'granted') {
+            setTimeout(() => {
                 navigator.serviceWorker.ready
                     .then((registration) => {
                         showNotification(registration);
                     });
-            }
-        });
-    }, 2000)
+            }, 2000)
+        }
+    });
 })
 
 function showNotification(registration) {
