@@ -1,10 +1,10 @@
 {
-    "name": "PWA Demo",
-    "short_name": "PWA Demo",
-    "desctiption": "PWA Demo",
+    "name": "Freiheitsenergie PWA Demo",
+    "short_name": "Freiheitsenergie PWA Demo",
+    "description": "Freiheitsenergie PWA Demo",
     "start_url": ".",
-    "background_color": "#6dcdb1",
-    "theme_color": "#009578",
+    "background_color": "#fff",
+    "theme_color": "#298836",
     "display": "standalone",
     "icons": [
         {
